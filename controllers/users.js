@@ -12,15 +12,18 @@ function showRoute(req, res, next) {
     .catch(next);
 }
 
-function createRoute(req, res, next) {
-  req.body.owner = req.currentUser;
-  User.create(req.body)
-    .then(user => res.status(201).json(user))
+function updateRoute(req, res, next) {
+  User.findById(req.params.id)
+    .then(user => user.set(req.body))
+    .then(user => user.save())
+    .then(user => res.json(user))
     .catch(next);
 }
+
+// delete
 
 module.exports = {
   index: indexRoute,
   show: showRoute,
-  create: createRoute
+  update: updateRoute
 };
