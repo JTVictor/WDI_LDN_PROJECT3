@@ -12,8 +12,10 @@
   "author": "Students",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.6.0",
-    "express": "^4.16.3"
+    "angular": "^1.7.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6",
+    "node": "^10.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
