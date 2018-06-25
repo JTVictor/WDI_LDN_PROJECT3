@@ -17,7 +17,9 @@ mongoose.connect(dbGymBuddy, (err, db) => {
       lat: 51.5034,
       lng: 0.1276
     },
-    description: 'I am looking for somebody to punch'
+    description: 'I am looking for somebody to punch',
+    username: 'Eubank_C',
+    email: 'chris@boxer.com'
   }])
 
     .then(users => console.log(`${users.length} user(s) created`))
