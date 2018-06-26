@@ -8,10 +8,10 @@ mongoose.connect(dbGymBuddy, (err, db) => {
 
   User.create([{
     firstName: 'Chris',
-    surName: 'Eubank',
+    lastName: 'Eubank',
     age: 51,
     address: '10 Downing Street, London, SW1A 2AA',
-    goals: 'Maintenance',
+    goal: 'Maintenance',
     image: 'https://www.famousbirthdays.com/headshots/chris-eubank-2.jpg',
     location: {
       lat: 51.5034,
@@ -19,9 +19,10 @@ mongoose.connect(dbGymBuddy, (err, db) => {
     },
     description: 'I am looking for somebody to punch',
     username: 'Eubank_C',
-    email: 'chris@boxer.com'
+    email: 'chris@boxer.com',
+    password: 'password',
+    passwordConfirmation: 'password'
   }])
-
     .then(users => console.log(`${users.length} user(s) created`))
     .catch(err => console.log(err))
     .finally(() => mongoose.connection.close());
