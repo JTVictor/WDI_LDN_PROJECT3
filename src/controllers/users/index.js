@@ -4,7 +4,8 @@ function UsersIndexCtrl($scope, $http) {
     method: 'GET',
     url: '/api/users'
   })
-    .then(res => $scope.users = res.data);
+    .then(res =>
+      $scope.users = res.data);
 }
 
 export default UsersIndexCtrl;
