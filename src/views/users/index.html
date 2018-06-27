@@ -1,7 +1,27 @@
 <h1>Users Index</h1>
 
-<ul>
-  <li ng-repeat="user in users">
-    <a ui-sref="usersShow({ id: user._id })">{{ user.firstName }} {{ user.lastName }}</a>
+<ul class="columns">
+  <li ng-repeat="user in users" class="column">
+    <a ui-sref="usersShow({ id: user._id })">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ user.image }}" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="{{ user.image }}" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">{{ user.firstName }} {{ user.lastName }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
   </li>
 </ul>
