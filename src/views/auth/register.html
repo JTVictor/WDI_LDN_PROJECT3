@@ -17,7 +17,7 @@
 
   <div class="field">
     <label class="label" for="address">Address</label>
-    <input class="input" id="address" name="address" placeholder="Address" ng-model="data.address" />
+    <input class="input" id="address" name="address" placeholder="Address" ng-model="data.address" google-autocomplete update-location="updateLocation(location)" />
   </div>
 
   <div class="field">
@@ -26,10 +26,22 @@
   </div>
 
   <img ng-src="{{ data.image }}" ng-if="data.image" />
+
+
   <div class="field">
     <label class="label" for="goal">Goal</label>
-    <input class="input" id="goal" name="goal" placeholder="Goal" ng-model="data.goal" />
+    <div class="control">
+      <div class="select">
+        <select ng-model="data.goal">
+          <option value="" disabled>Please select</option>
+          <option ng-repeat="goal in goals">{{ goal }}</option>
+        </select>
+      </div>
+    </div>
   </div>
+
+
+
 
   <div class="field">
     <label class="label" for="description">Description</label>
@@ -72,6 +84,6 @@
     <small ng-message="pattern">Passwords do not match</small>
     </div>
   </div>
-  
+
     <button class="button" ng-disabled="form.$invalid">Submit</button>
 </form>

@@ -19,6 +19,7 @@ import UsersShowCtrl from './controllers/users/show';
 import UsersEditCtrl from './controllers/users/edit';
 
 import filePicker from './directives/filePicker';
+import googleAutocomplete from './directives/googleAutocomplete';
 
 
 angular.module('usersApi', [
@@ -35,4 +36,5 @@ angular.module('usersApi', [
   .controller('UsersIndexCtrl', UsersIndexCtrl)
   .controller('UsersShowCtrl', UsersShowCtrl)
   .controller('UsersEditCtrl', UsersEditCtrl)
+  .directive('googleAutocomplete', googleAutocomplete)
   .directive('filePicker', filePicker);
