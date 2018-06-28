@@ -27,6 +27,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/users/show.html',
       controller: 'UsersShowCtrl'
     })
+    // .state('profile', {
+    //   url: '/login',
+    //   templateUrl: './views/auth/login.html',
+    //   controller: 'AuthLoginCtrl'
+    // })
     .state('login', {
       url: '/login',
       templateUrl: './views/auth/login.html',
@@ -41,6 +46,7 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/register',
       templateUrl: './views/auth/register.html',
       controller: 'AuthRegisterCtrl'
+      // resolve: { secureState }
     });
 
   $urlRouterProvider.otherwise('/');
