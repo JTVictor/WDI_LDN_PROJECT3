@@ -18,7 +18,7 @@ import UsersIndexCtrl from './controllers/users/index';
 import UsersShowCtrl from './controllers/users/show';
 import UsersEditCtrl from './controllers/users/edit';
 
-import filePicker from './directives/filePicker';
+import filePicker from './directives/filepicker';
 import googleAutocomplete from './directives/googleAutocomplete';
 import googleMap from './directives/googleMap';
 
