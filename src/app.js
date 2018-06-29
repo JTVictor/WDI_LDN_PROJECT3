@@ -20,6 +20,7 @@ import UsersEditCtrl from './controllers/users/edit';
 
 import filePicker from './directives/filePicker';
 import googleAutocomplete from './directives/googleAutocomplete';
+import googleMap from './directives/googleMap';
 
 
 angular.module('usersApi', [
@@ -37,4 +38,5 @@ angular.module('usersApi', [
   .controller('UsersShowCtrl', UsersShowCtrl)
   .controller('UsersEditCtrl', UsersEditCtrl)
   .directive('googleAutocomplete', googleAutocomplete)
+  .directive('googleMap', googleMap)
   .directive('filePicker', filePicker);

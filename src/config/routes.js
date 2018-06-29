@@ -27,6 +27,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/users/show.html',
       controller: 'UsersShowCtrl'
     })
+    .state('usersEdit', {
+      url: '/users/:id/edit',
+      templateUrl: './views/users/edit.html',
+      controller: 'UsersEditCtrl'
+    })
     // .state('profile', {
     //   url: '/login',
     //   templateUrl: './views/auth/login.html',
@@ -36,11 +41,6 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/login',
       templateUrl: './views/auth/login.html',
       controller: 'AuthLoginCtrl'
-    })
-    .state('edit', {
-      url: '/login',
-      templateUrl: './views/users/edit.html',
-      controller: 'UsersEditCtrl'
     })
     .state('register', {
       url: '/register',

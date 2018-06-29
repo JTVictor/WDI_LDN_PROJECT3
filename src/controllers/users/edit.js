@@ -1,4 +1,9 @@
 function UsersEditCtrl($scope, $http, $state) {
+  $scope.goals = ['Weight gain', 'Maintenance', 'Weight loss'];
+  $scope.updateLocation = function(location) {
+    $scope.data.location = location;
+    $scope.$apply();
+  };
 
   $scope.updateUser = function() {
     $http({
@@ -11,7 +16,7 @@ function UsersEditCtrl($scope, $http, $state) {
 
   $http({
     method: 'GET',
-    url: `/api/user/${$state.params.id}`
+    url: `/api/users/${$state.params.id}`
   })
     .then(res => $scope.data = res.data);
 }

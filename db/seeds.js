@@ -87,8 +87,8 @@ mongoose.connect(dbGymBuddy, (err, db) => {
     password: 'password',
     passwordConfirmation: 'password'
   }, {
-    firstName: 'Kane',
-    lastName: 'Harry',
+    firstName: 'Harry',
+    lastName: 'Kane',
     age: 24,
     address: 'White Hart Lane',
     goal: 'Weight Loss',
@@ -100,6 +100,86 @@ mongoose.connect(dbGymBuddy, (err, db) => {
     description: 'I prefer rugby',
     username: 'Harry_K',
     email: 'harry@spurs.uk',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }, {
+    firstName: 'He',
+    lastName: 'Man',
+    age: 24,
+    address: 'Old Street',
+    goal: 'Weight gain',
+    image: 'https://cdn.filestackcontent.com/dZooyXciS2trx3dGkfpg',
+    location: {
+      lat: 51.525233,
+      lng: -0.091159
+    },
+    description: 'Hi guys',
+    username: 'HeManEternia',
+    email: 'adam@eternia.com',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }, {
+    firstName: 'Skeletor',
+    lastName: 'Skeletor',
+    age: 66,
+    address: 'Regents Street',
+    goal: 'Weight Loss',
+    image: 'https://cdn.filestackcontent.com/dZooyXciS2trx3dGkfpg',
+    location: {
+      lat: 51.6032,
+      lng: 0.0657
+    },
+    description: 'I need to put some meat on these bones',
+    username: 'Skelly21',
+    email: 'skeletor@snakemountain.com',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }, {
+    firstName: 'Sylvestor ',
+    lastName: 'Stallone',
+    age: 82,
+    address: 'Brick Lane',
+    goal: 'Weight Loss',
+    image: 'https://cdn.filestackcontent.com/dZooyXciS2trx3dGkfpg',
+    location: {
+      lat: 51.512623,
+      lng: -0.140304
+    },
+    description: 'I want to work on my bum, tum and thighs',
+    username: 'Sly77',
+    email: 'sstalline@planethollywood.uk',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }, {
+    firstName: 'Grace',
+    lastName: 'Jones',
+    age: 24,
+    address: 'Bunhill Row',
+    goal: 'Weight Loss',
+    image: 'https://cdn.filestackcontent.com/dZooyXciS2trx3dGkfpg',
+    location: {
+      lat: 51.522985,
+      lng: -0.089823
+    },
+    description: 'Slave to the rhythym',
+    username: 'G_Jones',
+    email: 'grace@sgrace.uk',
+    password: 'password',
+    passwordConfirmation: 'password'
+  }, {
+    firstName: 'Taylor',
+    lastName: 'Swift',
+    age: 28,
+    address: 'Pratt Street',
+    goal: 'Weight Loss',
+    image: 'https://cdn.filestackcontent.com/x5uM6vIoRwOTyER0zvt7',
+    location: {
+      lat: 51.538769,
+      lng: -0.137111
+    },
+    description: 'Someone please feed me cake',
+    username: 'Swift_',
+    email: 'taylor@swift.uk',
     password: 'password',
     passwordConfirmation: 'password'
   }])

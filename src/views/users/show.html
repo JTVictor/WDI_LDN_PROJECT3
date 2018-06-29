@@ -1,39 +1,26 @@
-<h6>{{ user.firstName }} {{ user.lastName }}</h6>
 
-<ul>
-<li>{{ user.image }}</li>
-<li>{{ user.age }}</li>
-<li><p>Address: </p>{{ user.address }}</li>
-<li>{{ user.goal }}</li>
-<li>{{ user.description }}</li>
-<li>{{ user.age }}</li>
-</ul>
-
-<a ui-sref="usersIndex">All the users</a>
-
-
-<ul class="columns">
-  <li ng-repeat="user in users" class="column">
-    <a ui-sref="usersShow({ id: user._id })">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="{{ user.image }}" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="{{ user.image }}" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">{{ user.firstName }} {{ user.lastName }}</p>
-            </div>
-          </div>
-        </div>
+<div class="columns">
+  <div class="column">
+    <figure class="image is-4by3">
+      <img src="{{ user.image }}" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="column">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">{{ user.firstName }} {{ user.lastName }}, {{ user.age }}</p>
+        <p class="subtitle is-6">{{ user.address }}</p>
       </div>
-    </a>
-  </li>
-</ul>
+    </div>
+
+    <div class="content">
+      "{{ user.description }}"
+      <br>
+      GOAL: {{ user.goal }}
+      <br>
+      CONTACT: {{ user.email }}
+
+      <div class="google-map" google-map location="user.location"></div>
+    </div>
+  </div>
+</div>
