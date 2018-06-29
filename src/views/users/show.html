@@ -21,6 +21,8 @@
       CONTACT: {{ user.email }}
 
       <div class="google-map" google-map location="user.location"></div>
+
+      <a class="button" ui-sref="usersEdit({ id: user._id })" ng-if="isAuthenticated()">Edit</a>
     </div>
   </div>
 </div>

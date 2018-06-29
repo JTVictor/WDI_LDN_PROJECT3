@@ -25,7 +25,6 @@
         <a class="navbar-item" ui-sref="usersShow" ng-if="isAuthenticated()">Your profile</a>
         <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
         <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
-        <a class="navbar-item" ui-sref="edit" ng-if="isAuthenticated()">Edit</a>
         <a class="navbar-item" ng-click="logout()" ng-if="isAuthenticated()">Logout</a>
       </div>
     </div>
