@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
   age: { type: Number, required: true },
   address: { type: String, required: true },
   goal: { type: String, required: true },
-  image: { type: String, required: true },
+  image: { type: String },
   location: {
     lat: { type: Number, required: true },
     lng: { type: Number, required: true}
