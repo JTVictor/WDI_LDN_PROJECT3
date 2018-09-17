@@ -9,8 +9,8 @@ const userSchema = new mongoose.Schema({
   goal: { type: String, required: true },
   image: { type: String },
   location: {
-    lat: { type: Number, required: true },
-    lng: { type: Number, required: true}
+    lat: { type: Number },
+    lng: { type: Number }
   },
   description: { type: String, required: true },
   username: { type: String, required: true, unique: true },
