@@ -28,7 +28,7 @@ mongoose.connect(dbGymBuddy, (err, db) => {
     age: 51,
     address: '10 Downing Street, London, SW1A 2AA',
     goal: 'Maintenance',
-    image: 'https://cdn.filestackcontent.com/kSMr0yhRCW1Yd5pZZPjV',
+    image: 'https://www.famousbirthdays.com/headshots/chris-eubank-2.jpg',
     location: {
       lat: 51.5034,
       lng: 0.1276
@@ -156,7 +156,7 @@ mongoose.connect(dbGymBuddy, (err, db) => {
     age: 24,
     address: 'Bunhill Row',
     goal: 'Weight Loss',
-    image: 'https://cdn.filestackcontent.com/dZooyXciS2trx3dGkfpg',
+    image: 'https://imgur.com/lxUK29I',
     location: {
       lat: 51.522985,
       lng: -0.089823
